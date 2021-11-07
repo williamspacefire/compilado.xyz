@@ -12,9 +12,11 @@ import {
     HStack,
 } from '@chakra-ui/react'
 import HomePostThumbnail from './HomePostThumbnail'
+import { DateUtils } from '../../../utils/DateUtils'
 
 export default function PostCard(props: Post) {
     const date = new Date(props.creation_time)
+    const dateUtils = new DateUtils()
 
     return (
         <Center py={6}>
@@ -64,8 +66,7 @@ export default function PostCard(props: Post) {
                     <Stack direction={'column'} spacing={0} fontSize={'sm'}>
                         <Text fontWeight={600}>William Spacefire</Text>
                         <Text color={'gray.500'}>
-                            {date.getDay()}/{date.getMonth()}/
-                            {date.getFullYear()}
+                            {dateUtils.formatDateToVerbose(date)}
                         </Text>
                     </Stack>
                 </Stack>
