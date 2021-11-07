@@ -7,7 +7,7 @@ import { postsImageDirectory } from '../main/dependencies'
 
 export class PostsMarkdownFileImpl implements IPosts {
     private postId?: string
-    protected directoryFiles?: string[]
+    private directoryFiles?: string[]
     private post?: Post
 
     getHomePagePaths(): string[] {
@@ -79,7 +79,7 @@ export class PostsMarkdownFileImpl implements IPosts {
         return this.sortPost(posts)
     }
 
-    protected directoryFilesMapCallback(filename: string): Post {
+    private directoryFilesMapCallback(filename: string): Post {
         const postsInstance = new PostsMarkdownFileImpl()
         postsInstance.setPostId(this.getPostIdFromFileName(filename))
 
