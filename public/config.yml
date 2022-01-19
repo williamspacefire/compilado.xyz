@@ -28,17 +28,24 @@ collections:
             }
           - {
                 label: 'Date',
-                name: 'date',
+                name: 'creation_time',
+                widget: 'datetime',
+                format: 'YYYY-MM-DD hh:mm:ss',
+            }
+         - {
+                label: 'Date',
+                name: 'modification_time',
                 widget: 'datetime',
                 format: 'YYYY-MM-DD hh:mm:ss',
             }
           - {
                 label: 'Post Image',
-                name: 'image',
+                name: 'thumbnail',
                 widget: 'image',
-                required: false,
+                required: true,
             }
           - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Tags', name: 'tags', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
 
           - { label: 'Body', name: 'body', widget: 'markdown' }
