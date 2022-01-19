@@ -57,7 +57,7 @@ export class PostsMarkdownFileImpl implements IPosts {
     }
 
     private getThumbnailPath(thumbnail: string): string {
-        return postsImageDirectory + thumbnail
+        return postsImageDirectory + thumbnail.replace("/image/posts/", "")
     }
 
     private getFilePostFileAbsolutePath(): string {
