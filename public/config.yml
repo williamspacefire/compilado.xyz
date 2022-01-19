@@ -32,7 +32,7 @@ collections:
                 widget: 'datetime',
                 format: 'YYYY-MM-DD hh:mm:ss',
             }
-         - {
+          - {
                 label: 'Date',
                 name: 'modification_time',
                 widget: 'datetime',
