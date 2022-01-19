@@ -9,12 +9,4 @@ description: Post de teste por que tô com preguiça de escrever
 ---
 ### testando apenas
 
-1. afas
-2. fafafsd
-3. sasdgas
-4. dgas
-5. sfasdg
-
-
-
-> Olá isso é só um teste do CMS
+só testando
