@@ -1,7 +1,7 @@
 backend:
     name: github
     repo: williamspacefire/compilado.xyz
-    base_url: compilado-xyz.vercel.app/
+    base_url: /
     auth_endpoint: api/auth/
 
 media_folder: public/image
