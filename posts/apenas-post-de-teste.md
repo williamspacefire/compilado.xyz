@@ -2,7 +2,7 @@
 layout: post
 creation_time: "1642558518663"
 modification_time: "1642558518694"
-thumbnail: /image/bitcoin_network.jpg
+thumbnail: /image/posts/bitcoin_network.jpg
 title: Apenas post de teste
 tags: bitcoin, teste, post, criptomoedas
 description: Post de teste por que tô com preguiça de escrever
