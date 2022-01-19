@@ -4,8 +4,8 @@ backend:
     base_url: https://compilado-xyz.vercel.app/
     auth_endpoint: api/auth/
 
-media_folder: public/image
-public_folder: /image
+media_folder: public/image/posts
+public_folder: /image/posts
 
 publish_mode: editorial_workflow
 
