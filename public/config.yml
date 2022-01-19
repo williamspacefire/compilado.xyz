@@ -30,13 +30,13 @@ collections:
                 label: 'Date',
                 name: 'creation_time',
                 widget: 'datetime',
-                format: 'YYYY-MM-DD hh:mm:ss',
+                format: 'x',
             }
           - {
                 label: 'Date',
                 name: 'modification_time',
                 widget: 'datetime',
-                format: 'YYYY-MM-DD hh:mm:ss',
+                format: 'x',
             }
           - {
                 label: 'Post Image',
