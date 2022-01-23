@@ -9,7 +9,7 @@ export default class PostPageContent extends React.Component<Post> {
     render() {
         return (
             <>
-                <Flex justify='center' align='center' p='10'>
+                <Flex justify='center' align='center' p='5'>
                     <Box w='3xl'>
                         <VStack spacing='20px'>
                             <PostTitle title={this.props.title} />
