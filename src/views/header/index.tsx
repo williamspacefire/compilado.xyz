@@ -1,5 +1,6 @@
-import { Flex, Box, Heading } from '@chakra-ui/layout'
+import { Flex, Box, Heading, Divider, Stack } from '@chakra-ui/layout'
 import {
+    Button,
     IconButton,
     Spacer,
     useColorMode,
@@ -24,14 +25,40 @@ export default function Header(props: { title: string; homePage?: boolean }) {
                     rel='stylesheet'
                     href='https://unpkg.com/@highlightjs/cdn-assets@11.0.1/styles/default.min.css'></link>
             </Head>
-            <Flex p={4} justify='center' align='center'>
-                <Spacer />
+            <Flex
+                p={4}
+                marginLeft='auto'
+                marginRight='auto'
+                paddingLeft='4vw'
+                paddingRight='4vw'
+                width='100%'
+                maxW='calc(1140px + 8vw)'>
                 <Box p='2'>
-                    <Link href='/' passHref>
-                        <Heading as='a' size='md'>
-                            {config.site.name}
-                        </Heading>
-                    </Link>
+                    <Stack alignItems='center' direction='row' height='100%' p={4}>
+                        <Link href='/' passHref>
+                            <Heading
+                                as='a'
+                                size='md'
+                                fontSize='24px'
+                                fontWeight='800'
+                                marginRight='15px'
+                                fontFamily='sans-serif'>
+                                {config.site.name}
+                            </Heading>
+                        </Link>
+                        <Divider orientation='vertical' />
+                        <Box marginLeft='15px'>
+                            <Button colorScheme='teal' variant='ghost'>
+                                Sobre
+                            </Button>
+                            <Button colorScheme='teal' variant='ghost'>
+                                Autor
+                            </Button>
+                            <Button colorScheme='teal' variant='ghost'>
+                                Contato
+                            </Button>
+                        </Box>
+                    </Stack>
                 </Box>
                 <Spacer />
                 <Box>
