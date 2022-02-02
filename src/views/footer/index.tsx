@@ -93,7 +93,7 @@ export default function Footer() {
                     spacing={4}
                     justify={{ base: 'center', md: 'space-between' }}
                     align={{ base: 'center', md: 'center' }}>
-                    <Text>Copyright © Spacefire 2021.</Text>
+                    <Text>Created by Spacefire {new Date().getFullYear()}</Text>
                     <Stack direction={'row'} spacing={6}>
                         <SocialButton label={'Twitter'} href={'#'}>
                             <FaTwitter />

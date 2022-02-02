@@ -19,7 +19,7 @@ export default class HomePostThumbnail extends React.Component<PostThumbnailProp
 
     render() {
         return (
-            <Box {...this.style}>
+            <Box {...this.style} maxH={480}>
                 <Image src={this.props.thumbnailUrl} layout={'fill'} />
             </Box>
         )
