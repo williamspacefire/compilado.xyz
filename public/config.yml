@@ -1,7 +1,7 @@
 backend:
     name: github
     repo: williamspacefire/compilado.xyz
-    base_url: https://compilado-xyz.vercel.app/
+    base_url: https://blog.spacefire.xyz/
     auth_endpoint: api/auth/
 
 media_folder: public/image/posts
@@ -30,13 +30,13 @@ collections:
                 label: 'Date',
                 name: 'creation_time',
                 widget: 'datetime',
-                format: 'x',
+                format: 'X',
             }
           - {
                 label: 'Date',
                 name: 'modification_time',
                 widget: 'datetime',
-                format: 'x',
+                format: 'X',
             }
           - {
                 label: 'Post Image',
