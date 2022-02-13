@@ -1,26 +1,23 @@
 import React from 'react'
-import Image from 'next/image'
 import { Box } from '@chakra-ui/layout'
-import { ChakraProps } from '@chakra-ui/system'
+import { Img } from '@chakra-ui/react'
 
 type PostThumbnailProps = {
     thumbnailUrl: string
 }
 
 export default class HomePostThumbnail extends React.Component<PostThumbnailProps> {
-    style: ChakraProps = {
-        h: '210px',
-        bg: 'gray.100',
-        mt: -6,
-        mx: -6,
-        mb: 6,
-        pos: 'relative',
-    }
-
     render() {
         return (
-            <Box {...this.style} maxH={480}>
-                <Image src={this.props.thumbnailUrl} layout={'fill'} />
+            <Box maxW='calc(960px + 8vw)'>
+                <figure className='post_thumbnail'>
+                    <Img
+                        src={this.props.thumbnailUrl}
+                        className='thumbnail_rule'
+                        fallbackSrc='/image/2000x1215.webp'
+                        loading='lazy'
+                    />
+                </figure>
             </Box>
         )
     }

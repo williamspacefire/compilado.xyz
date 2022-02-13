@@ -1,3 +1,21 @@
 h1 .article-code {
     font-size: var(--chakra-fontSizes-4xl);
 }
+
+figure.post_thumbnail {
+    max-width: calc(1140px + 8vw);
+    margin-bottom: 45px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+img.thumbnail_rule {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    display: block;
+}

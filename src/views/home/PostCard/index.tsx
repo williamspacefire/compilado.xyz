@@ -25,9 +25,6 @@ export default function PostCard(props: Post) {
             <Box
                 maxW='calc(960px + 8vw)'
                 w={'full'}
-                //bg={useColorModeValue('white', 'gray.900')}
-                //boxShadow={'2xl'}
-                //rounded={'md'}
                 fontFamily='sans-serif'
                 p={6}
                 overflow={'hidden'}>
