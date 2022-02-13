@@ -28,7 +28,11 @@ export default function PostCard(props: Post) {
                 fontFamily='sans-serif'
                 p={6}
                 overflow={'hidden'}>
-                <HomePostThumbnail thumbnailUrl={props.thumbnail} />
+                <Link href={`/${props.canonical}`} passHref>
+                    <a>
+                        <HomePostThumbnail thumbnailUrl={props.thumbnail} />
+                    </a>
+                </Link>
                 <Box
                     maxW='calc(750px + 8vw)'
                     marginLeft='4vw'
