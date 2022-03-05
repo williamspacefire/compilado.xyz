@@ -10,8 +10,6 @@ import {
     Avatar,
     useColorModeValue,
     HStack,
-    Button,
-    Spacer,
 } from '@chakra-ui/react'
 import HomePostThumbnail from './HomePostThumbnail'
 import { DateUtils } from '../../../utils/DateUtils'
